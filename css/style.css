@@ -1,0 +1,224 @@
+
+       .code-container {
+  width: auto;  
+  min-width: 250px; 
+  margin: 20px auto;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative; 
+  overflow: hidden; /* Prevent scrolling */
+}
+
+
+.site-header {
+    margin-top: 100px; /* Adjust margin-top to avoid overlapping with the fixed navbar */
+}
+
+#code-area {
+  display: inline-block;
+  width: 90% !important; /* Set width to 90% of the container */
+ 
+ 
+  font-family: monospace;
+  background-color: inherit;
+  color: white;
+  padding: 10px; 
+  border: none;
+  resize: both; 
+}
+
+.copy-icon {
+  position: absolute;
+  top: 10px; 
+  right: 10px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease; 
+}
+
+.copy-icon:hover {
+  color: #4CAF50; 
+}
+body::-webkit-scrollbar { /* Targets the entire page's scrollbar */
+  width: 12px; /* Adjust scrollbar width */
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #888; 
+  border-radius: 6px; /* Rounder scrollbar thumb */
+  border: 3px solid #f1f1f1;  /* Creates a subtle border */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #555; 
+}
+
+
+        /* Basic styling */
+        body {
+            font-family: "Varela Round", sans-serif;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            
+        }
+footer {
+            background-color: #205081;
+            padding: 10px 0;
+            text-align: center;
+            
+        }
+
+        .site-header {
+            background-image: url('../tech_bg.jpg'); 
+            height: 350px;
+            background-size: cover;          
+            background-position: center;     
+            text-align: center;              
+            color: #ffffff;                  
+        }
+
+        .header-content {
+            padding: 30px 0;                 
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Blog content styling */
+        .main-content {
+            padding-top: 20px;
+        }
+
+        .sidebar {
+            float: left;
+            padding-top: 20px;
+            padding-left: 20px;
+            box-sizing: border-box;
+           
+        }
+
+        
+
+        /* Sticky sidebar */
+        .sticky-sidebar {
+            position: sticky;
+            top: 20px;
+        }
+
+        /* Navigation styling */
+        nav {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            padding: 5px 10px;
+        }
+
+        nav ul li a:hover {
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+        .card-img-top {
+            width: 300px;
+            height: 200px;
+            border-radius: 1rem;
+        }
+        .card-img-top:hover {
+            width: 350px;
+            height: 250px;
+            cursor: pointer;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            background-color: #205081;
+            color: white;
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 1rem;
+        }
+        .card-body{
+          
+        }
+         /* Responsive layout adjustments */
+         @media only screen and (min-width: 768px) {
+            .main-content {
+                width: 75%;
+                float: left;
+                padding-right: 20px;
+            }
+
+            .sidebar {
+                width: 25%;
+                float: left;
+                padding-left: 20px;
+            }
+            .card {
+            background-color: #fff;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            padding: 20px;
+        }
+        footer {
+            width: 100%;
+        }
+        }
+
+        @media only screen and (max-width: 767px) {
+            .sidebar {
+                width: 100%;
+                float: none;
+                padding-left: 0;
+            }
+            footer {
+            width: 100%;
+        }
+        }
+
+        .post-footer {
+            display: flex!important;
+            justify-content: space-between!important;
+            align-items: center!important;
+            gap: 10px!important;
+            font-size: 10px!important;
+        }
+        
+        .post-footer span {
+            flex: 1;
+            text-align: center; /* Center the elements horizontally */
+        }
+        
+        .author, .view-count, .posted-date {
+            flex: 1;
+        }
+        
